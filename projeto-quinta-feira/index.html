@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA Evolution - Cursos de Inteligência Artificial</title>
+    
+    <!-- Google Fonts - Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind CSS Custom Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            200: '#bbf7d0',
+                            300: '#86efac',
+                            400: '#4ade80',
+                            500: '#29e361',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            800: '#166534',
+                            900: '#14532d'
+                        }
+                    },
+                    fontFamily: {
+                        'sans': ['Poppins', 'ui-sans-serif', 'system-ui']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-gray-50 text-gray-800 leading-relaxed">
+
+    <!-- Header / Navegação -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <nav class="flex justify-between items-center py-4">
+                <div class="logo">
+                    <h1 class="text-2xl font-bold text-primary-600">IA Evolution</h1>
+                </div>
+                
+                <ul class="hidden md:flex space-x-8">
+                    <li><a href="#inicio" class="text-gray-700 hover:text-primary-600 transition duration-200 font-semibold">Início</a></li>
+                    <li><a href="#iniciante" class="text-gray-700 hover:text-primary-600 transition duration-200 font-semibold">Iniciante</a></li>
+                    <li><a href="#intermediario" class="text-gray-700 hover:text-primary-600 transition duration-200 font-semibold">Intermediário</a></li>
+                    <li><a href="#avancado" class="text-gray-700 hover:text-primary-600 transition duration-200 font-semibold">Avançado</a></li>
+                    <li><a href="#comparacao" class="text-gray-700 hover:text-primary-600 transition duration-200 font-semibold">Comparação</a></li>
+                    <li><a href="#contato" class="text-gray-700 hover:text-primary-600 transition duration-200 font-semibold">Contato</a></li>
+                </ul>
+
+                <!-- Menu Mobile (Botão Hamburger) -->
+                <button class="md:hidden text-gray-700 hover:text-primary-600 transition duration-200">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="py-20 text-center bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-800 mb-6">
+                Domine a <span class="text-primary-600">Inteligência Artificial</span>
+            </h1>
+            <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                Transforme sua carreira com nossos cursos especializados em IA. Do básico ao avançado, 
+                aprenda com especialistas e projetos práticos.
+            </p>
+            <a href="#iniciante" class="inline-block bg-primary-500 text-white px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:bg-primary-600 transition duration-200 mt-8">
+                Começar Agora
+            </a>
+        </div>
+    </section>
+
+    <!-- Seção Iniciante -->
+    <section id="iniciante" class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="bg-white rounded-xl shadow-xl p-8 my-12">
+                <h2 class="text-3xl font-bold text-primary-600 mb-6">Nível Iniciante</h2>
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <p class="text-lg text-gray-700 mb-4">
+                            Perfeito para quem está começando no mundo da Inteligência Artificial. 
+                            Aprenda os conceitos fundamentais e construa sua primeira aplicação de IA.
+                        </p>
+                        <ul class="text-gray-600 space-y-2">
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-primary-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                Fundamentos de Machine Learning
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-primary-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                Python para IA
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-primary-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                Análise de Dados
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-primary-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                Projeto Prático Simples
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="text-center">
+                        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=300&fit=crop&crop=center" alt="Curso Iniciante - Fundamentos de IA" class="max-w-full h-auto rounded-lg shadow-md mx-auto">
+                        <p class="text-2xl font-bold text-primary-600 mt-4">R$ 297,00</p>
+                        <p class="text-gray-600">3 meses de acesso</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Intermediário -->
+    <section id="intermediario" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="bg-white rounded-xl shadow-xl p-8 my-12">
+                <h2 class="text-3xl font-bold text-primary-600 mb-6">Nível Intermediário</h2>
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div class="order-2 md:order-1 text-center">
+                        <img src="https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=400&h=300&fit=crop&crop=center" alt="Curso Intermediário - Deep Learning" class="max-w-full h-auto rounded-lg shadow-md mx-auto">
+                        <p class="text-2xl font-bold text-primary-600 mt-4">R$ 597,00</p>
+                        <p class="text-gray-600">6 meses de acesso</p>
+                    </div>
+                    <div class="order-1 md:order-2">
+                        <p class="text-lg text-gray-700 mb-4">
+                            Para profissionais que já têm conhecimento básico e querem se especializar 
+                            em técnicas avançadas de Machine Learning e Deep Learning.
+                        </p>
+                        <ul class="text-gray-600 space-y-2">
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-primary-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                Deep Learning com TensorFlow
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-primary-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                Redes Neurais Convolucionais
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-primary-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                Processamento de Linguagem Natural
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-primary-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                Projetos com Datasets Reais
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Avançado -->
+    <section id="avancado" class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="bg-white rounded-xl shadow-xl p-8 my-12">
+                <h2 class="text-3xl font-bold text-primary-600 mb-6">Nível Avançado</h2>
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <p class="text-lg text-gray-700 mb-4">
+                            O mais completo programa para especialistas que querem dominar as tecnologias 
+                            mais avançadas de IA e se tornarem referência no mercado.
+                        </p>
+                        <ul class="text-gray-600 space-y-2">
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-primary-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                Arquiteturas Transformer
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-primary-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                Reinforcement Learning
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-primary-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                MLOps e Deploy em Produção
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-primary-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                Mentoria Individual
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="text-center">
+                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=300&fit=crop&crop=center" alt="Curso Avançado - IA e Machine Learning" class="max-w-full h-auto rounded-lg shadow-md mx-auto">
+                        <p class="text-2xl font-bold text-primary-600 mt-4">R$ 1.297,00</p>
+                        <p class="text-gray-600">12 meses de acesso</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tabela de Comparação -->
+    <section id="comparacao" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Comparação dos Cursos</h2>
+            
+            <div class="overflow-x-auto">
+                <table class="w-full border-collapse mt-6 shadow-lg rounded-lg overflow-hidden bg-white">
+                    <thead class="bg-primary-600 text-white">
+                        <tr>
+                            <th class="text-left p-4 font-bold uppercase">Características</th>
+                            <th class="text-left p-4 font-bold uppercase">Iniciante</th>
+                            <th class="text-left p-4 font-bold uppercase">Intermediário</th>
+                            <th class="text-left p-4 font-bold uppercase">Avançado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="even:bg-gray-50 hover:bg-primary-50 transition duration-200">
+                            <td class="p-4 border border-gray-200 font-semibold">Duração</td>
+                            <td class="p-4 border border-gray-200">3 meses</td>
+                            <td class="p-4 border border-gray-200">6 meses</td>
+                            <td class="p-4 border border-gray-200">12 meses</td>
+                        </tr>
+                        <tr class="even:bg-gray-50 hover:bg-primary-50 transition duration-200">
+                            <td class="p-4 border border-gray-200 font-semibold">Horas de Conteúdo</td>
+                            <td class="p-4 border border-gray-200">40 horas</td>
+                            <td class="p-4 border border-gray-200">80 horas</td>
+                            <td class="p-4 border border-gray-200">150 horas</td>
+                        </tr>
+                        <tr class="even:bg-gray-50 hover:bg-primary-50 transition duration-200">
+                            <td class="p-4 border border-gray-200 font-semibold">Projetos Práticos</td>
+                            <td class="p-4 border border-gray-200">3 projetos</td>
+                            <td class="p-4 border border-gray-200">6 projetos</td>
+                            <td class="p-4 border border-gray-200">12 projetos</td>
+                        </tr>
+                        <tr class="even:bg-gray-50 hover:bg-primary-50 transition duration-200">
+                            <td class="p-4 border border-gray-200 font-semibold">Mentoria</td>
+                            <td class="p-4 border border-gray-200">Fórum</td>
+                            <td class="p-4 border border-gray-200">Sessões em grupo</td>
+                            <td class="p-4 border border-gray-200">Individual</td>
+                        </tr>
+                        <tr class="even:bg-gray-50 hover:bg-primary-50 transition duration-200">
+                            <td class="p-4 border border-gray-200 font-semibold">Certificado</td>
+                            <td class="p-4 border border-gray-200">✓</td>
+                            <td class="p-4 border border-gray-200">✓</td>
+                            <td class="p-4 border border-gray-200">✓</td>
+                        </tr>
+                        <tr class="even:bg-gray-50 hover:bg-primary-50 transition duration-200">
+                            <td class="p-4 border border-gray-200 font-semibold">Preço</td>
+                            <td class="p-4 border border-gray-200 text-primary-600 font-bold">R$ 297,00</td>
+                            <td class="p-4 border border-gray-200 text-primary-600 font-bold">R$ 597,00</td>
+                            <td class="p-4 border border-gray-200 text-primary-600 font-bold">R$ 1.297,00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulário de Contato -->
+    <section id="contato" class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-2xl mx-auto">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Entre em Contato</h2>
+                
+                <div class="bg-white rounded-xl shadow-xl p-8">
+                    <form class="space-y-6">
+                        <div>
+                            <label for="nome" class="block text-sm font-medium text-gray-700 mb-2">Nome Completo</label>
+                            <input 
+                                type="text" 
+                                id="nome" 
+                                name="nome" 
+                                required 
+                                class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition duration-200"
+                                placeholder="Seu nome completo"
+                            >
+                        </div>
+
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-2">E-mail</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                required 
+                                class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition duration-200"
+                                placeholder="seu@email.com"
+                            >
+                        </div>
+
+                        <div>
+                            <label for="curso" class="block text-sm font-medium text-gray-700 mb-2">Curso de Interesse</label>
+                            <select 
+                                id="curso" 
+                                name="curso" 
+                                class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition duration-200"
+                            >
+                                <option value="">Selecione um curso</option>
+                                <option value="iniciante">Iniciante - R$ 297,00</option>
+                                <option value="intermediario">Intermediário - R$ 597,00</option>
+                                <option value="avancado">Avançado - R$ 1.297,00</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="telefone" class="block text-sm font-medium text-gray-700 mb-2">Telefone (Opcional)</label>
+                            <input 
+                                type="tel" 
+                                id="telefone" 
+                                name="telefone" 
+                                class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition duration-200"
+                                placeholder="(11) 99999-9999"
+                            >
+                        </div>
+
+                        <div>
+                            <label for="mensagem" class="block text-sm font-medium text-gray-700 mb-2">Mensagem</label>
+                            <textarea 
+                                id="mensagem" 
+                                name="mensagem" 
+                                rows="5" 
+                                required 
+                                class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition duration-200 resize-vertical"
+                                placeholder="Conte-nos sobre seus objetivos e como podemos ajudá-lo..."
+                            ></textarea>
+                        </div>
+
+                        <button 
+                            type="submit" 
+                            class="w-full bg-primary-500 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-primary-600 transition duration-200 text-lg"
+                        >
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-2xl font-bold text-primary-500 mb-4">IA Evolution</h3>
+            <p class="text-gray-400 mb-6">
+                Transformando carreiras através da educação em Inteligência Artificial
+            </p>
+            <div class="flex justify-center space-x-6 text-gray-400">
+                <a href="#" class="hover:text-primary-500 transition duration-200">Política de Privacidade</a>
+                <a href="#" class="hover:text-primary-500 transition duration-200">Termos de Uso</a>
+                <a href="#contato" class="hover:text-primary-500 transition duration-200">Suporte</a>
+            </div>
+            <p class="text-gray-500 mt-8 text-sm">
+                © 2025 IA Evolution. Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
